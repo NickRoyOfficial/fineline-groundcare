@@ -44,3 +44,7 @@
 - Keep section headings proportionate to the cards. Avoid giant full-width slides for a few short reviews, excessive empty space, floating/overlapping controls, and developer-facing source notes in the main visual hierarchy.
 - Use carousels only when the number of reviews or the approved composition warrants them. Controls must be in a separate normal-flow row, at least 44px, with visible focus/hover states, meaningful accessible names, and no inherited translate offset. Preserve touch/keyboard interaction and reduced-motion behavior.
 - Adapt colors, borders, corner radius, and spacing to each business without weakening this hierarchy. The standard is a quality baseline, not one identical section copied everywhere.
+
+## Hero height correction
+- The entire home hero, including navigation and bottom rail, must fit exactly 100svh (100vh fallback). Never add fixed pixel min-heights that override it.
+- Adapt type and spacing to available height. On short screens, keep a clearly labeled estimate button in the hero and open the accessible form dialog; do not clip content or use an internal scrolling hero. Keep dialog fields uniquely labeled.

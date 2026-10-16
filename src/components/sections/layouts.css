@@ -83,3 +83,20 @@
 }
 @media(max-width:400px) { .p-grid-cards { grid-template-columns:1fr; } }
 @media(prefers-reduced-motion:reduce) { .p-photo-card-media > img { transition:none; } }
+
+/* Default review presentation: compact cards with stable attribution. */
+.p-testimonials { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; }
+.p-testimonial-card { min-width:0; padding:0; gap:0; border-radius:1rem; box-shadow:none; overflow:hidden; }
+.p-testimonial-content { display:flex; flex-direction:column; height:100%; min-height:17.5rem; padding:1.75rem; }
+.p-testimonial-mark { width:1.8rem; height:1.8rem; color:var(--testimonial-accent,var(--primary)); fill:currentColor; stroke-width:0; flex-shrink:0; margin-bottom:1.5rem; }
+.p-testimonial-content blockquote { margin:0 0 1.75rem; }
+.p-testimonial-content blockquote p { margin:0; font-size:1.125rem; line-height:1.6; font-weight:500; letter-spacing:-.015em; overflow-wrap:anywhere; }
+.p-testimonial-author { display:flex; align-items:center; gap:.8rem; margin-top:auto; padding-top:1.25rem; border-top:1px solid var(--border); }
+.p-testimonial-avatar { display:grid; place-items:center; width:2.75rem; height:2.75rem; border-radius:50%; object-fit:cover; background:var(--secondary); color:var(--foreground); font-size:.75rem; font-weight:650; flex-shrink:0; }
+.p-testimonial-author > div { min-width:0; }
+.p-testimonial-author cite { font-style:normal; display:block; font-weight:650; font-size:.875rem; line-height:1.4; }
+.p-testimonial-author > div > p { font-size:.75rem; line-height:1.5; color:var(--muted-foreground); margin:.2rem 0 0; }
+.p-testimonial-source { margin-left:auto; display:grid; place-items:center; width:2.75rem; height:2.75rem; flex-shrink:0; }
+.p-testimonial-source svg { width:1rem; height:1rem; }
+@media(max-width:1000px) and (min-width:701px) { .p-testimonials { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:700px) { .p-testimonials { grid-template-columns:1fr; gap:1rem; } .p-testimonial-content { min-height:15rem; padding:1.5rem; } }

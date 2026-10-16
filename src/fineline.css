@@ -8,3 +8,15 @@
 /* Shadcn carousel controls sit in a separate row, clear of the review card. */
 .reviews-section .p-carousel-controls button { background:var(--background); border-color:#a3b394; box-shadow:none; transition:background .15s,color .15s,border-color .15s; }
 .reviews-section .p-carousel-controls button:hover:not(:disabled) { background:#263d2b; color:#f4f5ef; border-color:#263d2b; }
+
+/* Compact testimonial cards, adapted to Fineline's charcoal-and-green palette. */
+.reviews-section { --testimonial-accent:#a8ed43; padding-block:clamp(3.5rem,6vw,6rem); }
+.reviews-section .p-section-heading { align-items:center; margin-bottom:2rem; }
+.reviews-section .p-section-heading h2 { font-size:clamp(2rem,3.5vw,3.25rem); line-height:1.1; letter-spacing:-.045em; }
+.reviews-section .p-section-intro { max-width:18rem; font-size:.85rem; }
+.reviews-section .p-testimonial-card { background:#26372b; color:#f5f7ef; border:1px solid #344a37; border-radius:1rem; box-shadow:0 5px 16px #1b211b09; }
+.reviews-section .p-testimonial-content { min-height:18rem; }
+.reviews-section .p-testimonial-author { border-color:#ffffff24; }
+.reviews-section .p-testimonial-avatar { background:#a8ed431c; color:#c9f49a; border:1px solid #a8ed4333; }
+.reviews-section .p-testimonial-author > div > p { color:#b4c3ad; }
+@media(max-width:700px) { .reviews-section .p-testimonial-content { min-height:15rem; } .reviews-section .p-section-intro { margin-top:.8rem; } }

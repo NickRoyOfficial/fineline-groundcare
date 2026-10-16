@@ -50,11 +50,11 @@
 .p-footer-columns .p-footer-main { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .p-footer-compact .p-footer-main { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
 .p-footer-bottom { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; padding-block:1.5rem; border-top:1px solid var(--border); font-size:.75rem; }
-.p-feedback { min-width:0; padding-bottom:3.75rem; }
+.p-feedback { min-width:0; }
 .p-feedback-card { padding:2rem; background:var(--secondary); border-radius:var(--radius-xl,1rem); }
 .p-feedback-name { margin-top:1.5rem; font-weight:600; font-size:.875rem; }
-.p-carousel-controls { position:absolute; bottom:0; right:0; display:flex; gap:.5rem; }
-.p-carousel-controls button { position:static; transform:none; width:2.75rem; height:2.75rem; }
+.p-carousel-controls { position:static; display:flex; justify-content:flex-end; gap:.5rem; margin-top:1.25rem; }
+.p-carousel-controls button { position:static; inset:auto; translate:none; transform:none; width:2.75rem; height:2.75rem; min-height:2.75rem; }
 .p-inquiry { display:grid; gap:1rem; }
 .p-inquiry input,.p-inquiry select,.p-inquiry textarea { font-size:1rem; }
 .p-inquiry [role='status'] { font-size:.75rem; }
